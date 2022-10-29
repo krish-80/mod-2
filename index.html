@@ -9,35 +9,45 @@
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <style>
-    
-           div.container{
-                         color: rgb(27, 178, 140);
-                         font-weight: bold;
-                         font-family: Georgia, 'Times New Roman', Times, serif;
-           }
-
-                 ul.nav{
-                        color: rgb(22, 103, 50);
-                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                 }
-
-              div.col-md-3 text-end{
-                       color: bisque;
-              }   
-              
-            header.d-flex{
-                  color: rgb(167, 75, 228);
-            }
-
-            h3.fs-2{
-                   color: rgb(137, 32, 32);
-            }
-
-            button.btn-primary{
-                         color: black;
-            }
+          body{
+              background-color:rgb(182, 240, 176);
+          }
+          
+          div.container{
+                     color: rgb(72, 189, 19);
+          }
+          
+          p{
+            color: rgb(3, 15, 1);
+          }
+          
+          h1{
+            color: rgb(72, 189, 19);
+          }
                         
+         h2{
+          color:rgb(72, 189, 19);
+         }
 
+         button.btn-outline-primary{
+               color: rgb(140, 7, 31);
+               border-color: rgb(154, 24, 44);
+              }
+       
+         button.btn-outline-secondary{
+          color: rgb(16, 72, 6);
+         }
+
+        a.nav-link{
+                   color: rgb(16, 72, 6);
+        }
+
+        a.icon-link{
+                   color: rgb(16, 72, 6);
+        }
+
+         
+         
 
     </style>
         
@@ -45,140 +55,97 @@
 
     <body>
 
-        
-        <div class="container">
-          
-            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-              <p>work in progress</p>
-              <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-              </a>
-        
-              <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
-              </ul>
-              
-              <div class="col-md-3 text-end">
-                <button type="button" class="btn btn-outline-primary me-2">Login</button>
-                <button type="button" class="btn btn-primary">Sign-up</button>
-              </div>
-              <div class="px-4 py-5 my-5 text-center">
-                <img class="d-block mx-auto mb-4" src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-                <h1 class="display-5 fw-bold">You are a hero</h1>
-                <div class="col-lg-6 mx-auto">
-                  <p class="lead mb-4">Quickly designnn and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-                  </div>
-                </div>
-              </div>
+      <div class="container">
+        <header class="d-flex justify-content-center py-3">
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Meal Plans</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Special Occasions</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+          </ul>
+        </header>
+      </div>
 
-              <div class="b-example-divider"></div>
-
-              <div class="container px-4 py-5" id="featured-3">
-                <h2 class="pb-2 border-bottom">Columnssss with icons</h2>
-                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-                  <div class="feature col">
-                    <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                      <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
-                    </div>
-                    <h3 class="fs-2">feature</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                    <a href="#" class="icon-link d-inline-flex align-items-center">
-                      Call to action
-                      <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
-                    </a>
-                  </div>
-                  <div class="feature col">
-                    <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                      <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
-                    </div>
-                    <h3 class="fs-2">Featured title</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                    <a href="#" class="icon-link d-inline-flex align-items-center">
-                      Call to action
-                      <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
-                    </a>
-                  </div>
-                  <div class="feature col">
-                    <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                      <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
-                    </div>
-                    <h3 class="fs-2">Featured title</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                    <a href="#" class="icon-link d-inline-flex align-items-center">
-                      Call to action
-                      <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="container">
-                <footer class="py-5">
-                  <div class="row">
-                    <div class="col-6 col-md-2 mb-3">
-                      <h5>Section</h5>
-                      <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                      </ul>
-                    </div>
-              
-                    <div class="col-6 col-md-2 mb-3">
-                      <h5>Section</h5>
-                      <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                      </ul>
-                    </div>
-              
-                    <div class="col-6 col-md-2 mb-3">
-                      <h5>Section</h5>
-                      <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                      </ul>
-                    </div>
-              
-                    <div class="col-md-5 offset-md-1 mb-3">
-                      <form>
-                        <h5>Subscribe to our newsletter</h5>
-                        <p>Monthly digest of what's new and exciting from us.</p>
-                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                          <label for="newsletter1" class="visually-hidden">Email address</label>
-                          <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                          <button class="btn btn-primary" type="button">Subscribe</button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-              
-                  <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                    <p>© 2022 Company, Inc. All rights reserved.</p>
-                    <ul class="list-unstyled d-flex">
-                      <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-                      <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-                      <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-                    </ul>
-                  </div>
-                </footer>
-              </div>
-            </header>
+      <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4" src="logo.jpg" alt="" width="500" height="300">
+        <h1 class="display-5 fw-bold">Desi Vegan Kitchen</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Every comitted meat eater will be impressed by the plant based offerings found here.Feast on jackfruit hyderabadi dum biryani to gluten free katti rolls.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-outline-primary btn-lg px-4 gap-3">Order online</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Menu</button>
           </div>
+        </div>
+      </div>
+
+      <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom">Latest added recipes........</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              
+            </div>
+            <h3 class="fs-2">Recipe of the week</h3>
+            <p>Traditional and creative plant based indian recipes for the home cooks, from the beautiful kitchen of desi vegan kitchen.</p>
+            <a href="#" class="icon-link d-inline-flex align-items-center">
+              Get the recipe            
+            </a>
+          </div>
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            </div>
+            <h3 class="fs-2">Chef's special</h3>
+            <p>Every great chef has a defining recipe, our signature dishes change with time as our creators find their own voice,find out which is the chef's special currently.</p>
+            <a href="#" class="icon-link d-inline-flex align-items-center">
+              Know more            
+            </a>
+          </div>
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">            
+            </div>
+            <h3 class="fs-2">Bestseller</h3>
+            <p>Find out which foods our chef's love cooking the most and have found the most success and have left our customers in awe.</p>
+            <a href="#" class="icon-link d-inline-flex align-items-center">
+              Know more
+              <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Philosophy</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact us</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Follow us</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Our policies</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2022 Company, Inc</p>
+
+
+        <div class="form-container d-flex justify-content-center">
+        
+          <formclass"border rounded p-5 mt-5>
+             <h1>Register Now to claim 10% off your first order.</h1>
+             <div class="mb-1">
+               <label for="exampleInputEmail1" class="form-label">Email <Address></Address></label>
+               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+             </div>
+             <div class="mb-3">
+               <label for="exampleInputPassword1" class="form-label">Password</label>
+               <input type="password" class="form-control" id="exampleInputPassword1">
+             </div>
+             <div class="mb-3 form-check">
+               <input type="checkbox" class="form-check-input" id="exampleCheck1">
+               <label class="form-check-label" for="exampleCheck1">Check me out</label>
+             </div>
+             <button type="sign in" class="btn btn-outline-primary">Sign in</button>
+             <button type="sign up" class="btn btn-outline-secondary">Sign up</button>
+           </form>
+      </footer>
+        
           
 
             <!-- NavBar -->
